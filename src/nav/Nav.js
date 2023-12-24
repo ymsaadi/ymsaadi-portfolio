@@ -13,11 +13,11 @@ const Nav = () => {
     switch (location.pathname) {
       case "/":
         return "nav-about";
-      case "skills":
+      case "/skills":
         return "nav-skills";
-      case "projects":
+      case "/projects":
         return "nav-projects";
-      case "contact":
+      case "/contact":
         return "nav-contact";
       default:
         return "";
@@ -28,11 +28,11 @@ const Nav = () => {
     switch (location.pathname) {
       case "/":
         return "ABOUT";
-      case "skills":
+      case "/skills":
         return "SKILLS";
-      case "projects":
+      case "/projects":
         return "PROJECTS";
-      case "contact":
+      case "/contact":
         return "CONTACT";
       default:
         return "";
@@ -47,12 +47,12 @@ const Nav = () => {
   };
 
   const renderNavLink = (to, imgSrc, altText, navClass) => {
-    const isCurrentPage = isCurrentPage(navClass);
-    const linkClass = isCurrentPage ? "nav-link current" : "nav-link";
+    const isCurrent = isCurrentPage(navClass);
+    const linkClass = isCurrent ? "nav-link current" : "nav-link";
     return (
       <Link to={to} className={linkClass}>
         <img src={imgSrc} altText={altText} />
-        {isCurrentPage && <h1 className="page-title">{pageTitle}</h1>}
+        {isCurrent && <h1 className="page-title">{pageTitle}</h1>}
       </Link>
     );
   };
