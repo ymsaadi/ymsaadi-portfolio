@@ -1,8 +1,13 @@
 import React from 'react'
+import Avatar from "../avatar/Avatar.js";
+import AboutMenu from "./AboutMenu.js"
 
 const About = () => {
   return (
-    <div></div>
+    <>
+      <Avatar page="about"/>
+      <AboutMenu/>
+    </>
   )
 }
 
