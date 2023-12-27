@@ -6,9 +6,7 @@ const subheadingsData = {
         <>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sit
-            repudiandae praesentium iste quaerat ratione doloribus velit odio
-            ipsum, numquam delectus deserunt accusantium accusamus, recusandae
-            totam in, harum magni similique.
+            repudiandae praesentium iste quaerat ratione doloribus.
           </p>
         </>
       ),
@@ -21,26 +19,22 @@ const subheadingsData = {
         <>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sit
-            repudiandae praesentium iste quaerat ratione doloribus velit odio
-            ipsum, numquam delectus deserunt accusantium accusamus, recusandae
-            totam in, harum magni similique.
+            repudiandae praesentium iste quaerat ratione doloribus.
           </p>
         </>
       ),
     },
     {
-        title: "2017 Bachelors Degree",
-        content: (
-          <>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sit
-              repudiandae praesentium iste quaerat ratione doloribus velit odio
-              ipsum, numquam delectus deserunt accusantium accusamus, recusandae
-              totam in, harum magni similique.
-            </p>
-          </>
-        ),
-      },
+      title: "2017 Bachelors Degree",
+      content: (
+        <>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sit
+            repudiandae praesentium iste quaerat ratione doloribus.
+          </p>
+        </>
+      ),
+    },
   ],
   3: [
     {
@@ -49,26 +43,22 @@ const subheadingsData = {
         <>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sit
-            repudiandae praesentium iste quaerat ratione doloribus velit odio
-            ipsum, numquam delectus deserunt accusantium accusamus, recusandae
-            totam in, harum magni similique.
+            repudiandae praesentium iste quaerat ratione doloribus.
           </p>
         </>
       ),
     },
     {
-        title: "2020 Software Developer Intern",
-        content: (
-          <>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sit
-              repudiandae praesentium iste quaerat ratione doloribus velit odio
-              ipsum, numquam delectus deserunt accusantium accusamus, recusandae
-              totam in, harum magni similique.
-            </p>
-          </>
-        ),
-      },
+      title: "2020 Software Developer Intern",
+      content: (
+        <>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sit
+            repudiandae praesentium iste quaerat ratione doloribus.
+          </p>
+        </>
+      ),
+    },
   ],
 };
 
