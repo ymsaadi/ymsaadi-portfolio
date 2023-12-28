@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import ProjectsMenu from "./ProjectsMenu";
 
 const Projects = () => {
   return (
-    <div></div>
-  )
-}
+    <>
+      <ProjectsMenu />
+    </>
+  );
+};
 
-export default Projects
+export default Projects;
