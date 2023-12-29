@@ -48,7 +48,7 @@ const ContactMenu = () => {
         console.log("Email is sent successfully!", response.text);
         setFormData(initialState);
         setErrors({});
-        setIsSent(true); // HERE
+        setIsSent(true);
       })
       .catch((error) => {
         console.error("Email sending failed", error);
