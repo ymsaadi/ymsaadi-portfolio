@@ -5,8 +5,11 @@ const subheadingsData = {
       content: (
         <>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sit
-            repudiandae praesentium iste quaerat ratione doloribus.
+            Software developer With a 3 years in the startup hustle and a love
+            for Java and JavaScript, I'm all about tackling challenges. I'm
+            Bilingual in English and French, I thrive on continuous learning,
+            and I bring an adaptable and innovative vibe to every project. I'm
+            very Excited to bring this energy to your dynamic team !
           </p>
         </>
       ),
@@ -14,23 +17,23 @@ const subheadingsData = {
   ],
   2: [
     {
-      title: "2020 Masters Degree",
+      title: "2020 Master's Degree",
       content: (
         <>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sit
-            repudiandae praesentium iste quaerat ratione doloribus.
+            Information system's engineering, gratuated with a 3.60 GPA. Degree
+            was evaluated by the World Education Services (WES).
           </p>
         </>
       ),
     },
     {
-      title: "2017 Bachelors Degree",
+      title: "2017 Bachelor's Degree",
       content: (
         <>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sit
-            repudiandae praesentium iste quaerat ratione doloribus.
+            Networking Security and Information Systems, gratuated with a 3.70
+            GPA. Degree was evaluated by the World Education Services (WES).
           </p>
         </>
       ),
