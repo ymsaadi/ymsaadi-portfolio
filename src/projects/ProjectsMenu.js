@@ -1,14 +1,18 @@
 import classNames from "classnames";
 import React, { useState } from "react";
+import useSound from "use-sound";
 import projects from "./projectsData";
-import "../styles/projectMenu.css"
+import "../styles/projectMenu.css";
+import clickSound from "../assets/click-2.mp3";
 
 const ProjectsMenu = () => {
-    const projectItems = ["PROJECT ONE", "PROJECT TWO", "PROJECT THREE"]; 
+  const projectItems = ["PROJECT ONE", "PROJECT TWO", "PROJECT THREE"];
   const [activeProject, setActiveProject] = useState(1);
+  const [clickTech] = useSound(clickSound, { volume: 0.25 });
 
   const handleProjectClick = (project) => {
     setActiveProject(project);
+    clickTech();
   };
 
   const renderContent = (projects) => {

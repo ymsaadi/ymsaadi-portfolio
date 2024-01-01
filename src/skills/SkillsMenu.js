@@ -1,17 +1,21 @@
 import React, { useState } from "react";
+import useSound from "use-sound";
 import classNames from "classnames";
 import "../styles/skillsMenu.css";
 import skills from "./skillsData.js";
 import frontendIcon from "../assets/eagle-emblem.png";
 import backendIcon from "../assets/hawk-emblem.png";
+import clickSound from "../assets/click-2.mp3";
 
 const MENU_ITEMS = ["BACK-END", "FRONT-END"];
 
 const SkillsMenu = () => {
   const [activeMenuItem, setActiveMenuItem] = useState(1);
+  const [clickTech] = useSound(clickSound, { volume: 0.25 });
 
   const handleMenuItemClick = (menuItem) => {
     setActiveMenuItem(menuItem);
+    clickTech();
   };
 
   const renderContent = (skills) => {
