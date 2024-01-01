@@ -1,23 +1,30 @@
 import React, { useState } from "react";
+import useSound from "use-sound";
 import AboutMenuItem from "./AboutMenuItem";
 import AboutSubheading from "./AboutSubheading";
 import subheadingsData from "./subheadingsData";
 import personalIcon from "../assets/moebius-triangle.png";
 import educationIcon from "../assets/upgrade.png";
 import careerIcon from "../assets/triple-corn.png";
+import clickSound from "../assets/click-2.mp3";
 
 const MENU_ITEMS = ["PERSONAL", "EDUCATION", "CAREER"];
 
 const AboutMenu = (props) => {
   const [activeMenuItem, setActiveMenuItem] = useState(1);
   const [activeSubheading, setActiveSubheading] = useState(1);
+  const [clickTech] = useSound(clickSound, { volume: 0.25 });
+  const [clickTechHigh] = useSound(clickSound, { playbackRate: 1.4, volume: 0.25 });
 
   const handleMenuItemClick = (menuItem) => {
     setActiveMenuItem(menuItem);
+    setActiveSubheading(1);
+    clickTech();
   };
 
   const handleSubheadingClick = (subheading) => {
     setActiveSubheading(subheading);
+    clickTechHigh();
   };
 
   const activeMenuTitle = MENU_ITEMS[activeMenuItem - 1];

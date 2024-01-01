@@ -1,13 +1,16 @@
 import React from "react";
+import useSound from "use-sound";
 import { Link, useLocation } from "react-router-dom";
 import astronautHelmet from "../assets/astronaut-helmet.png";
 import deadEye from "../assets/dead-eye.png";
 import stack from "../assets/stack.png";
 import envelope from "../assets/envelope.png";
+import clickSound from "../assets/click-1.mp3";
 import "../styles/nav.css";
 
 const Nav = () => {
   const location = useLocation();
+  const [clickTech] = useSound(clickSound, { volume: 0.30 });
 
   const getNavPositionClass = () => {
     switch (location.pathname) {
@@ -50,7 +53,7 @@ const Nav = () => {
     const isCurrent = isCurrentPage(navClass);
     const linkClass = isCurrent ? "nav-link current" : "nav-link";
     return (
-      <Link to={to} className={linkClass}>
+      <Link to={to} className={linkClass} onClick={clickTech}>
         <img src={imgSrc} alt={altText} />
         {isCurrent && <h1 className="page-title">{pageTitle}</h1>}
       </Link>
