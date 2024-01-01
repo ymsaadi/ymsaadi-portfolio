@@ -30,6 +30,12 @@ a {
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
+  text-decoration: none;
+}
+
+a img {
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 .page-title {
@@ -70,4 +76,9 @@ a {
   .page-title {
     display: none;
   }
+  a img {
+    width: 2rem;
+    height: 2rem;
+  }
+  
 }
