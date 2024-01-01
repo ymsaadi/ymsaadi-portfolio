@@ -5,7 +5,7 @@ import skills from "./skillsData.js";
 import frontendIcon from "../assets/eagle-emblem.png";
 import backendIcon from "../assets/hawk-emblem.png";
 
-const MENU_ITEMS = ["FRONT-END", "BACK-END"];
+const MENU_ITEMS = ["BACK-END", "FRONT-END"];
 
 const SkillsMenu = () => {
   const [activeMenuItem, setActiveMenuItem] = useState(1);
