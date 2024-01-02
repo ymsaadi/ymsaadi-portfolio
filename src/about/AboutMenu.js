@@ -17,14 +17,18 @@ const AboutMenu = (props) => {
   const [clickTechHigh] = useSound(clickSound, { playbackRate: 1.4, volume: 0.25 });
 
   const handleMenuItemClick = (menuItem) => {
+    if (menuItem !== activeMenuItem) {
+      clickTech();
+    }
     setActiveMenuItem(menuItem);
     setActiveSubheading(1);
-    clickTech();
   };
 
   const handleSubheadingClick = (subheading) => {
+    if (subheading !== activeSubheading) {
+      clickTechHigh();
+    }
     setActiveSubheading(subheading);
-    clickTechHigh();
   };
 
   const activeMenuTitle = MENU_ITEMS[activeMenuItem - 1];

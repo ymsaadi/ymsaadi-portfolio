@@ -49,11 +49,17 @@ const Nav = () => {
     return navClass === navPosistionClass;
   };
 
+  const makeSound = (noSound) => {
+    if (!noSound) {
+      clickTech()
+    }
+  }
+
   const renderNavLink = (to, imgSrc, altText, navClass) => {
     const isCurrent = isCurrentPage(navClass);
     const linkClass = isCurrent ? "nav-link current" : "nav-link";
     return (
-      <Link to={to} className={linkClass} onClick={clickTech}>
+      <Link to={to} className={linkClass} onClick={() => makeSound(isCurrent)}>
         <img src={imgSrc} alt={altText} />
         {isCurrent && <h1 className="page-title">{pageTitle}</h1>}
       </Link>

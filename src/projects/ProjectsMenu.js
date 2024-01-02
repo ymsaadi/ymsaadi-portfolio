@@ -12,8 +12,10 @@ const ProjectsMenu = () => {
   const [clickTech] = useSound(clickSound, { volume: 0.25 });
 
   const handleProjectClick = (project) => {
+    if (project !== activeProject) {
+      clickTech();
+    }
     setActiveProject(project);
-    clickTech();
   };
 
   const renderContent = (projects) => {

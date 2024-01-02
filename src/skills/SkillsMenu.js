@@ -14,8 +14,10 @@ const SkillsMenu = () => {
   const [clickTech] = useSound(clickSound, { volume: 0.25 });
 
   const handleMenuItemClick = (menuItem) => {
+    if (menuItem !== activeMenuItem) {
+      clickTech();
+    }
     setActiveMenuItem(menuItem);
-    clickTech();
   };
 
   const renderContent = (skills) => {
