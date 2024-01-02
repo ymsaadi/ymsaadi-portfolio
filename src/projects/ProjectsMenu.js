@@ -6,7 +6,8 @@ import "../styles/projectMenu.css";
 import clickSound from "../assets/click-2.mp3";
 
 const ProjectsMenu = () => {
-  const projectItems = ["PROJECT ONE", "PROJECT TWO", "PROJECT THREE"];
+  // const projectItems = ["Microservices", "MyGameList API", "PROJECT THREE"];
+  const projectItems = ["Microservices", "MyGameList API"];
   const [activeProject, setActiveProject] = useState(1);
   const [clickTech] = useSound(clickSound, { volume: 0.25 });
 
@@ -29,9 +30,9 @@ const ProjectsMenu = () => {
           >
             GITHUB
           </a>
-          <a href={project.demo} target="_blank" rel="noopener noreferrer">
+          {/* <a href={project.demo} target="_blank" rel="noopener noreferrer">
             DEMO
-          </a>
+          </a> */}
         </div>
       </div>
     ));
@@ -48,7 +49,7 @@ const ProjectsMenu = () => {
             key={index}
             onClick={() => handleProjectClick(index + 1)}
           >
-            <h2 className="title">{item}</h2>
+            <h2 className="project-title">{item}</h2>
           </div>
         ))}
       </div>
