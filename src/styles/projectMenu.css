@@ -118,6 +118,10 @@
     .project-title {
         font-size: 0.8rem;
     }
+
+    .project-sub-container img {
+        height: 170px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -152,5 +156,6 @@
 
     .project-items-container {
         margin-top: 0;
+        margin-bottom: 2rem;
     }
 }
